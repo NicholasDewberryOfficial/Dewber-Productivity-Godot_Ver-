@@ -27,4 +27,6 @@ This was chaotic for the following reasons:
 - It's REALLY, REALLY easy to make stuff in here, and make it look good.
 - I can also port to mobile devices. 
 
-#Where to follow progress?
+# Where to follow progress?
+
+https://nicholasdewberryofficial.github.io/DewberProductivity.html
