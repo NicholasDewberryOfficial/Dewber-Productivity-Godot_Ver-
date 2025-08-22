@@ -26,3 +26,5 @@ This was chaotic for the following reasons:
 # Why godot?
 - It's REALLY, REALLY easy to make stuff in here, and make it look good.
 - I can also port to mobile devices. 
+
+#Where to follow progress?
