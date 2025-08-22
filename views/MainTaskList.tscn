@@ -1,0 +1,33 @@
+[gd_scene load_steps=8 format=3 uid="uid://chmashvj7uguu"]
+
+[ext_resource type="Script" uid="uid://b4fbjh0bokjjp" path="res://views/main_task_list.gd" id="1_td8wd"]
+[ext_resource type="PackedScene" uid="uid://cuu5h8j5gcafv" path="res://tasks/generic_task_holder.tscn" id="2_2nlei"]
+[ext_resource type="Script" uid="uid://b87b83pp6j1i5" path="res://tasks/task.gd" id="3_td8wd"]
+[ext_resource type="Resource" uid="uid://ddiugh6ypc3ni" path="res://tasks/finsihDemo.tres" id="4_gni8s"]
+[ext_resource type="Resource" uid="uid://di4cbc8bsenc0" path="res://tasks/addstuff.tres" id="5_7w1yv"]
+
+[sub_resource type="Gradient" id="Gradient_j6f1p"]
+colors = PackedColorArray(0, 0, 0, 1, 0.229112, 0.229112, 0.229112, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hxid3"]
+gradient = SubResource("Gradient_j6f1p")
+fill = 1
+fill_from = Vector2(0.521472, 0.52454)
+
+[node name="MainTaskList" type="Node2D"]
+script = ExtResource("1_td8wd")
+taskslice = ExtResource("2_2nlei")
+currtasks = Array[ExtResource("3_td8wd")]([ExtResource("4_gni8s"), ExtResource("5_7w1yv")])
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 1901.0
+offset_bottom = 1055.0
+texture = SubResource("GradientTexture2D_hxid3")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 303.0
+offset_top = 66.0
+offset_right = 1519.0
+offset_bottom = 990.0
+size_flags_horizontal = 3
+size_flags_vertical = 3

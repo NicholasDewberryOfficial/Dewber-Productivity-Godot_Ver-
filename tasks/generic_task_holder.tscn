@@ -1,0 +1,76 @@
+[gd_scene load_steps=5 format=3 uid="uid://cuu5h8j5gcafv"]
+
+[ext_resource type="Script" uid="uid://bsgevm8n2x6ia" path="res://views/generic_task_holder.gd" id="1_noqy8"]
+[ext_resource type="Texture2D" uid="uid://dcfcbnctsebol" path="res://UI/time-trap.png" id="2_147jv"]
+[ext_resource type="Texture2D" uid="uid://yebp33ow2eag" path="res://UI/checkered-flag.png" id="3_e0oyh"]
+[ext_resource type="Texture2D" uid="uid://bvxvyrvrnwwvk" path="res://UI/click.png" id="4_ts3cu"]
+
+[node name="genericTaskHolder" type="FlowContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 428.0
+offset_top = 262.0
+offset_right = -321.0
+offset_bottom = -311.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_noqy8")
+
+[node name="taskname" type="RichTextLabel" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "ThingsThingsThingsThingsThingsThingsThingsThingsThingsThings
+"
+fit_content = true
+
+[node name="tags" type="RichTextLabel" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Tags :Tags :Tags:Tags:Tags:Tags:Tags:T ags:"
+
+[node name="tasktime" type="RichTextLabel" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+bbcode_enabled = true
+text = "0/0	"
+fit_content = true
+
+[node name="notes" type="RichTextLabel" parent="."]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+text = "This should be in its own rowThis should be in its own rowThis should be in its own rowThis should be in its own rowThis should be in its own rowThis should be in its own rowThis should be in its own rowThis should be in its own rowThis should be in its own rowThis should be in its own rowThis should be in its own rowThis should be in its own row"
+
+[node name="startLogging" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.1
+text = "
+Start Logging
+"
+icon = ExtResource("2_147jv")
+expand_icon = true
+
+[node name="finishTask" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.1
+text = "
+Finish Task"
+icon = ExtResource("3_e0oyh")
+expand_icon = true
+
+[node name="editTask" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.1
+text = "
+Edit Task"
+icon = ExtResource("4_ts3cu")
+expand_icon = true
+
+[connection signal="pressed" from="startLogging" to="." method="_on_start_logging_pressed"]

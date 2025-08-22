@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="task" load_steps=2 format=3 uid="uid://ddiugh6ypc3ni"]
+
+[ext_resource type="Script" uid="uid://b87b83pp6j1i5" path="res://tasks/task.gd" id="1_b0flo"]
+
+[resource]
+script = ExtResource("1_b0flo")
+uniqueID = 0
+title = "Finish Demo"
+mood = 0
+tags = Array[String](["dp", "thingy", "10"])
+notes = ""
+scheduledDate = 0
+estimatedTimeMinutes = 0
+currMinutes = 0
+archiveDate = 0
+currentlyTracking = false
+startTime = 0
+metadata/_custom_type_script = "uid://b87b83pp6j1i5"

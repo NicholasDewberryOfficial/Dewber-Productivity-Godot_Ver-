@@ -1,0 +1,12 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://cwg4kaimftj8k"]
+
+[ext_resource type="FontFile" uid="uid://rmdpmh17kpa0" path="res://UI/fonts/CourierPrime-Regular.ttf" id="1_ib4ei"]
+[ext_resource type="StyleBox" uid="uid://tfopj0vxwajq" path="res://UI/mygradientbackground.tres" id="1_x5fuw"]
+
+[resource]
+Button/constants/outline_size = 10
+Button/fonts/font = ExtResource("1_ib4ei")
+Button/styles/normal = ExtResource("1_x5fuw")
+RichTextLabel/constants/outline_size = 10
+RichTextLabel/fonts/normal_font = ExtResource("1_ib4ei")
+RichTextLabel/styles/normal = ExtResource("1_x5fuw")
