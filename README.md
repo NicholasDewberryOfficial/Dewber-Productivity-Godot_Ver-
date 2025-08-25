@@ -13,9 +13,11 @@ Imagine a todo list with 40 things on it. Whenever I did something, I'd cross it
 
 This was chaotic for the following reasons:
 - Sometimes tasks have a lot of master tasks, and chaining was impossible
-- Some tasks would bleed over from week to week, and thus
-- No tagging system - I would have things for different classes all 
+- Some tasks would bleed over from week to week, and thus I'd have some tasks be repeated/lost.
+- No tagging system - I would have things for different classes all on the same doc.
 
+
+There's a couple of existing productivitiy softwares, but I still want to make something that's tailored to me.
 
 - I like super productivity, but hate the notifications/little annoying quirks
 - I like todo lists, but I want a little more power
